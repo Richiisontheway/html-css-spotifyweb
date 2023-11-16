@@ -89,10 +89,12 @@ header a{
 }
 .card-container{
     display: flex;
+    margin: 20px 0;
 }
 .music-container > h3{
     color: white;
-    padding: 20px 0;
+    padding-top: 30px ;
+    font-size: 1.5em;
 }
 .music{
     width: calc(100% / 6);  
@@ -106,10 +108,17 @@ header a{
     color: white;
     text-align: center;
 }
+.song-name h3{
+    padding-top: 15px;
+}
 .song-name p{
     color: var(--color-icon-);
     font-weight: bold;
     padding: 10px 0;
+}
+.music-container p{
+    color: var(--color-icon-);
+    padding: 15px 0;
 }
 /* 
     INIZIO FOOTER
