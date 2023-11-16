@@ -15,7 +15,9 @@
 .contenitore{
     max-width: 1200px;
     margin: 0 auto;
-
+}
+:root{
+    --color-icon-:#7B7B7B;
 }
 
 /* 
@@ -45,7 +47,9 @@ main{
     background-color: #141922;
     height: calc(100vh - 100px);
 }
-
+/* 
+    INIZIO FOOTER
+*/
 footer{
     background-color: #282828;
     color: white;
@@ -55,8 +59,10 @@ footer{
     align-items: center;
     flex-wrap: wrap;
 }
-
-footer > div:first-child{
+/* 
+    PRIMO CONTAINER
+*/
+.brano-container{
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -73,7 +79,7 @@ footer .brano-container div:nth-child(3){
     margin: 0 15px;
 }
 footer .brano-container i {
-    color: #7B7B7B;
+    color: var(--color-icon-);
 }
 footer .heart{
     margin-right: 10px;
@@ -84,4 +90,57 @@ footer .heart{
 }
 footer .img-container img{
     width: 100%;
+}
+footer .icon-container > i{
+    margin: 0 20px;
+    font-size: 2em;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+}
+/* 
+    SECONDO CONTAINER
+*/
+.track-container{
+    width: 40%;
+}
+.track-container > div:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+.track-line{
+    margin: 20px 0;
+    border-radius: 20px;
+    background-color: var(--color-icon-);
+    width: 100%;
+}
+.line-effect{
+    padding: 2px;
+    background-color: #C1C1C1;
+    width: 20%;
+    border-radius: 20px;
+}
+.track-container > div > span{
+    padding: 0 5px;
+    margin-bottom: 2px;
+}
+/* 
+    TERZO CONTAINER
+*/
+.audio-container{
+    width: 20%;
+}
+.audio-container .icon-container{
+    align-items: center;
+}
+.audio-container .icon-container > i{
+    font-size: 15px;
+    margin: 0 10px;
+}
+.audio-container .track-line{
+    margin-right: 5px;
+}
+.audio-container .line-effect{
+    width: 50%;
 }
